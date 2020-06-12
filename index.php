@@ -41,6 +41,7 @@
           // получаем переданные логин и пароль с формы
           $login = $_POST['login'];
           $pwd = $_POST['pwd'];
+          $email = $_POST['email'] 
           
           
           // сверим полученный пароль с теми то хранятся в массиве $users
@@ -49,6 +50,7 @@
               // установим переменные сесии
               $_SESSION["autorized"] = true;
               $_SESSION["user"] = $login;
+              $_SESSION["email"] = $email;
             }
           }
         }
