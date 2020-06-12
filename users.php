@@ -7,4 +7,9 @@
      "root" => "123",
      "test" => "123"
   );
+
+  $email = array(
+     "root" => "root@yandex.ru",
+     "test" => "test@yandex.ru"
+  );
 ?>
