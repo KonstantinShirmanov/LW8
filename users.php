@@ -4,12 +4,13 @@
   // но т.к. мы еще не изучали БД то поступим вот так вот просто
   // сохраним пользователей в ассоциативном массиве
   $users = array(
-     "root" => "123",
-     "test" => "123"
-  );
-
-  $email = array(
-     "root" => "root@yandex.ru",
-     "test" => "test@yandex.ru"
+     "root" => array(
+     	"password"=>"123",
+     	"email"=>"root@yandex.ru"
+     ),
+     "test" => array(
+     "password" => "321",
+     "email" => "test@yandex.ru"
+     )
   );
 ?>
