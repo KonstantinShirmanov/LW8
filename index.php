@@ -49,7 +49,7 @@
               // установим переменные сесии
               $_SESSION["autorized"] = true;
               $_SESSION["user"] = $login;
-              $_SESSION["email"] = $users[$email];
+              $_SESSION["email"] = $email[$value];
             }
           }
         }
