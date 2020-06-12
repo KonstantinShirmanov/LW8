@@ -14,10 +14,8 @@
 <p align = "center">
 <?php echo $_SESSION["user"]; ?>
 </p>
-
-   <h2>Пользователь:</h2>
 <p align = "center">
-<?php echo $_SESSION["user"]; ?>
+<?php echo $_SESSION["email"]; ?>
 </p>
 
 <div align="center"><a href="index.php?action=exit">Выйти</a></div>
