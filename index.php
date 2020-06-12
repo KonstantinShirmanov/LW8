@@ -45,11 +45,11 @@
           
           // сверим полученный пароль с теми то хранятся в массиве $users
           if(isset($users[$login])) {
-             if($pwd == $users[$login]) {
+             if($pwd == $users[$login][$password]) {
               // установим переменные сесии
               $_SESSION["autorized"] = true;
               $_SESSION["user"] = $login;
-              $_SESSION["email"] =$value;
+              $_SESSION["email"] =$users[$login][$email];
             }
           }
         }
