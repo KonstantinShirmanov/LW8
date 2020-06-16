@@ -80,7 +80,7 @@
             $s = simplexml_load_file('data/news.xml');
             break;
 
-            casу 3:
+            case 3:
             $s = simplexml_load_file('data/contacts.xml');
             break;
             
