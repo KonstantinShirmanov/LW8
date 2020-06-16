@@ -109,12 +109,12 @@
           }
         else if(($p == 0) && ($news == 0) && ($_SESSION["autorized"] == true)) {
             // вывод новости
-            echo "<H2>".iconv("UTF-8", "UTF-8",$s->data[$news - 1]->header)."</H2>";  
-            echo "<H4>".iconv("UTF-8", "UTF-8",$s->data[$news - 1]->date)."</H4>";
-            echo parse_bb_codes(iconv("UTF-8", "UTF-8",$s->data[$news - 1]->text));
+               echo "<H2>".iconv("UTF-8", "windows-1251",$s->data[$news - 1]->header)."</H2>";  
+            echo "<H4>".iconv("UTF-8", "windows-1251",$s->data[$news - 1]->date)."</H4>";
+            echo parse_bb_codes(iconv("UTF-8", "windows-1251",$s->data[$news - 1]->text));
         }
 
-        else if(($p == 3) && ($_SESSION["autorized"] == true))
+        else if(($p == 2) && ($_SESSION["autorized"] == true))
           for($i = 0; $i < $s->datacount[0]; $i++) {
           echo "<H2>".iconv("UTF-8", "UTF-8",$s->data[$i]->header)."</H2>";  
           echo parse_bb_codes(iconv("UTF-8", "UTF-8",$s->data[$i]->text));
