@@ -110,7 +110,11 @@
             echo parse_bb_codes(iconv("UTF-8", "UTF-8",$s->data[$news - 1]->text));
         }
 
-        else if(($p == 2) && ($news == 0) && ($_SESSION["autorized"] == true))
+        else if(($p == 2) && ($news == 0) && ($_SESSION["autorized"] == true)){
+          echo "<H2>".iconv("UTF-8", "UTF-8",$s->data[$news - 1]->header)."</H2>";  
+            echo "<H4>".iconv("UTF-8", "UTF-8",$s->data[$news - 1]->date)."</H4>";
+            echo parse_bb_codes(iconv("UTF-8", "UTF-8",$s->data[$news - 1]->text));
+        }
         else
           include "error.php";
           
