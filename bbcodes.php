@@ -19,7 +19,8 @@ function parse_bb_codes($var) {
                 '/\[img\](.*?)\[\/img\]/is',
                 '/\[url\](.*?)\[\/url\]/is',
                 '/\[url\=(.*?)\](.*?)\[\/url\]/is',
-                '/\[br\]/'
+                '/\[br\]/',
+                '/\[bl\]/'
                 );
 
       $replace = array(
