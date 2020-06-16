@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+  <datacount>3</datacount>
+  
+  <data>
+    <header>Наши контакты</header>
+    
+    <shorttext>[p]Наши контакты[/p]</shorttext>
+    <text>[p]
+          email - root@yandex.ru
+          [/p]
+
+          [p]Ттел : +7-777-777-777-77 [/p]
+
+    </text>
+</root>
