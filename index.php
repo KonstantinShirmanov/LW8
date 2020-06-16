@@ -82,6 +82,7 @@
 
             casу 3:
             $s = simplexml_load_file('data/contacts.xml');
+            break;
             
 	        default:
             if($news == 0)
