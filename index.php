@@ -115,7 +115,7 @@
         }
 
         else if(($p == 2) && ($_SESSION["autorized"] == true))
-          for($i = 0; $i < $s->datacount[3]; $i++) {
+          for($i = 0; $i < $s->datacount[0]; $i++) {
           echo "<H2>".iconv("UTF-8", "UTF-8",$s->data[$i]->header)."</H2>";  
           echo parse_bb_codes(iconv("UTF-8", "UTF-8",$s->data[$i]->text));
         }
