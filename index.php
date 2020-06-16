@@ -107,9 +107,9 @@
             echo parse_bb_codes(iconv("UTF-8", "UTF-8",$s->data[$i]->shorttext));
             echo parse_bb_codes(iconv("UTF-8", "UTF-8",$s->data[$i]->addurl));
           }
-        else if(($p == 0) && ($news == 0) && ($_SESSION["autorized"] == true)) {
+        else if(($p == 1) && ($news == 0) && ($_SESSION["autorized"] == true)) {
             // вывод новости
-               echo "<H2>".iconv("UTF-8", "windows-1251",$s->data[$news - 1]->header)."</H2>";  
+            echo "<H2>".iconv("UTF-8", "windows-1251",$s->data[$news - 1]->header)."</H2>";  
             echo "<H4>".iconv("UTF-8", "windows-1251",$s->data[$news - 1]->date)."</H4>";
             echo parse_bb_codes(iconv("UTF-8", "windows-1251",$s->data[$news - 1]->text));
         }
