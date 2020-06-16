@@ -31,7 +31,8 @@ function parse_bb_codes($var) {
                 '<img src="$1" />',
                 '<a href="$1">$1</a>',
                 '<a href="$1">$2</a>',
-                '<br>'
+                '<br>',
+                '<bl>'
                 );
 
       $var = preg_replace ($search, $replace, $var);
