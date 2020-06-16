@@ -79,6 +79,9 @@
           case 1:
             $s = simplexml_load_file('data/news.xml');
             break;
+
+            casу 3:
+            $s = simplexml_load_file('data/contacts.xml');
             
 	        default:
             if($news == 0)
