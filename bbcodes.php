@@ -32,7 +32,7 @@ function parse_bb_codes($var) {
                 '<a href="$1">$1</a>',
                 '<a href="$1">$2</a>',
                 '<br>',
-                "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
+                "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
                 );
 
       $var = preg_replace ($search, $replace, $var);
